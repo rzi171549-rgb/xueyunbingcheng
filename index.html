@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>雪韵冰城 · 米沙旅人站</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="refinements.css" />
+</head>
+<body>
+  <div class="snow"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">M</span><span>雪韵冰城<small>白银时代 · 俄侨记忆</small></span></a>
+    <nav><button class="nav-activity" data-open="events">活动中心</button><a href="#map">打卡地图</a><a href="#member">会员中心</a><a href="#shop">文创商城</a><button class="nav-bookings" data-open="myBookings">我的预约</button></nav>
+    <button class="ghost" id="loginBtn">登录 / 注册</button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CENTRAL AVENUE · HARBIN</p>
+        <h1>住进一段<br><em>会发光的旧时光</em></h1>
+        <p class="hero-text">不止住宿。跟随小熊米沙，在中央大街开启一场俄式生活、节日活动与城市漫游。</p>
+        <div class="hero-actions"><button class="primary" data-open="booking">预约本周活动 <b>→</b></button><button class="text-btn" data-open="video">播放米沙夜谈 <span>▶</span></button></div>
+        <div class="quick-entry"><button data-open="events"><b>✦</b><span>活动报名</span></button><button data-open="newcomer"><b>券</b><span>领会员券</span></button><button data-open="map"><b>⌖</b><span>打卡地图</span></button><button data-open="shop"><b>礼</b><span>文创兑换</span></button></div>
+        <div class="hero-stats"><div><b>12</b><span>本月主题活动</span></div><div><b>9</b><span>馆内故事点位</span></div><div><b>3,000+</b><span>冰雪旅人会员</span></div></div>
+      </div>
+      <div class="hero-art" id="heroArt">
+        <div class="aurora aurora-one"></div><div class="aurora aurora-two"></div><div class="stars"></div>
+        <div class="arch arch-one"></div><div class="arch arch-two"></div>
+        <div class="misha-slide active" data-title="白银时代沉浸晚宴" data-subtitle="在列车报站、NPC来信和俄式乐声中入席"><img src="assets/source/image25.jpeg" alt="白银时代沉浸晚宴米沙形象" /></div>
+        <div class="misha-slide" data-title="中央大街热红酒驿站" data-subtitle="一杯暖手热饮，带走雪夜里的哈尔滨故事"><img src="assets/source/image28.jpeg" alt="热红酒驿站米沙形象" /></div>
+        <div class="misha-slide" data-title="手作大列巴DIY" data-subtitle="跟着米沙主厨，烘烤一枚旅行纪念"><img src="assets/source/image27.jpeg" alt="手作大列巴DIY米沙形象" /></div>
+        <div class="misha-slide" data-title="中秋亲子DIY下午茶" data-subtitle="把月亮、套娃和俄式点心放进同一个下午"><img src="assets/source/image29.jpeg" alt="中秋亲子DIY米沙形象" /></div>
+        <span class="ticket">1924<br><b>BOARDING PASS</b></span><span class="stamp">· Misha ·<b>WINTER</b></span><div class="slide-copy"><b id="slideTitle">白银时代沉浸晚宴</b><span id="slideSubtitle">在列车报站、NPC来信和俄式乐声中入席</span></div><div class="slide-dots"><button class="active" aria-label="白银时代沉浸晚宴"></button><button aria-label="中央大街热红酒驿站"></button><button aria-label="手作大列巴DIY"></button><button aria-label="中秋亲子DIY下午茶"></button></div>
+      </div>
+    </section>
+
+    <section class="notice"><span>NEW</span><b>冰雪季限定徽章收藏</b><p>参与「白银时代沉浸式晚宴」，解锁米沙极地探险家电子徽章。</p><button data-open="badge">查看徽章 →</button></section>
+
+    <section class="section" id="events">
+      <div class="section-heading"><p class="eyebrow">ACTIVITY CENTER · WHAT'S ON</p><h2>活动中心<br>把酒店，过成目的地</h2><p>所有活动面向住客与非住客开放；会员享优先预约与专属价格。</p></div>
+      <div class="event-grid">
+        <article class="event-card featured"><div class="card-image dinner"><span>本周主推</span></div><div class="event-info"><p>FRI · 19:30</p><h3>周五夜 · 白银时代</h3><div class="chips"><i>沉浸晚宴</i><i>NPC剧情</i><i>适合约会</i></div><footer><strong>¥268 <small>会员 ¥228</small></strong><button data-book="周五夜 · 白银时代">预约</button></footer></div></article>
+        <article class="event-card"><div class="card-image bread"></div><div class="event-info"><p>SAT · 14:00</p><h3>手作大列巴工坊</h3><div class="chips"><i>亲子友好</i><i>90分钟</i></div><footer><strong>¥98 <small>含下午茶</small></strong><button data-book="手作大列巴工坊">预约</button></footer></div></article>
+        <article class="event-card"><div class="card-image dance"></div><div class="event-info"><p>SUN · 15:00</p><h3>丁香花俄语沙龙</h3><div class="chips"><i>文化体验</i><i>限20人</i></div><footer><strong>¥68 <small>会员 8折</small></strong><button data-book="丁香花俄语沙龙">预约</button></footer></div></article>
+      </div>
+      <button class="more" data-open="events">查看全部 12 场活动 <b>→</b></button>
+    </section>
+
+    <section class="section venue-section" id="venue"><div class="section-heading"><p class="eyebrow">THIRD SPACE · VENUE GUIDE</p><h2>来酒店，不必先订一间房</h2><p>从大堂下午茶到屋顶活动，多种空间面向本地来访者与住店旅客开放；在这里，开启哈尔滨的俄式生活体验。</p></div><div class="venue-grid"><article><span>01 · ARRIVALS</span><h3>车站主题大堂</h3><p>复古船票、米沙迎宾与城市漫游起点。</p></article><article><span>02 · TEA & DINING</span><h3>餐厅与大堂吧</h3><p>俄式下午茶、主题晚宴与日常茶歇。</p></article><article><span>03 · SALON & WORKSHOP</span><h3>多功能厅与文化沙龙</h3><p>舞会、手作工坊、研学与中俄文化交流活动。</p></article><article><span>04 · ROOFTOP</span><h3>屋顶露台</h3><p>在城市天际线间，收藏冰城四季与节庆时光。</p></article></div><div class="arrival-note"><b>到店信息</b><span>哈尔滨市南岗区松花江街道邮政街147号 · 机场接送机 ¥220/次 · 接送站 ¥80/次，提前预约酒店交通服务。</span></div></section>
+
+    <section class="experience" id="map"><div class="experience-art"><div class="map-card"><p>STORY MAP</p><h3>米沙的酒店漫游</h3><span class="pin p1">01</span><span class="pin p2">02</span><span class="pin p3">03</span><span class="route"></span><b>1F 车站大堂</b><small>集齐 6 枚印章，兑换限定明信片</small></div></div><div class="experience-copy"><p class="eyebrow">CHECK IN & COLLECT</p><h2>沿着故事线，<br>集一册哈尔滨</h2><p>从车站大堂到俄侨书房、茶炊房与屋顶观景台，在每一个停留点收集米沙印章、解锁城市故事。</p><ul><li><b>01</b> 到达点位，扫码获得电子印章</li><li><b>02</b> 完成互动，解锁隐藏故事</li><li><b>03</b> 集章兑换积分与米沙文创</li></ul><button class="primary" data-open="map">打开打卡地图 <b>→</b></button></div></section>
+
+    <section class="member" id="member"><div class="member-copy"><p class="eyebrow">SNOW TRAVELLER CLUB</p><h2>你的每一次停留，<br>都会留下温度</h2><p>从活动报名、到店打卡到绿色入住，成长值与积分都将成为下一次相见的礼物。</p><button class="light" data-open="member">查看会员权益 <b>→</b></button></div><div class="membership-card"><p>您好，冰雪旅人</p><h3>银芒会员 <span>SLIVER STAR</span></h3><div class="progress"><i></i></div><div class="member-data"><div><b>1,280</b><span>成长值</span></div><div><b>860</b><span>可用积分</span></div><div><b>04</b><span>已收集徽章</span></div></div><img src="assets/source/image27.jpeg" alt="节日款米沙" /></div></section>
+
+    <section class="section shop" id="shop"><div class="section-heading"><p class="eyebrow">Misha's Curio Shop</p><h2>把故事带回家</h2><p>用积分兑换旅行记忆，也可购买联名礼盒、门票与下午茶。</p></div><div class="shop-grid"><article><img src="assets/source/image26.jpeg" alt="米沙系列徽章"><h3>米沙六款收藏徽章</h3><p>800 积分起 / 节日限定</p><button data-open="shop">积分兑换</button></article><article><img src="assets/source/image28.jpeg" alt="圣诞节米沙"><h3>冬日礼物盲盒</h3><p>¥79 / 含隐藏款概率</p><button data-open="shop">加入心愿单</button></article><article class="bundle"><span>SET</span><h3>两人下午茶<br>与故事漫游包</h3><p>下午茶 + 跟拍机位地图 + 2 枚印章</p><strong>¥198</strong><button data-book="两人下午茶与故事漫游包">立即预约 →</button></article></div></section>
+
+    <section class="ops"><div><p class="eyebrow">HOTEL OPERATIONS</p><h2>让每一次热闹，<br>都能被妥善经营</h2><p>以活动体验、会员礼遇与服务管理相互联动，将每一次停留沉淀为值得珍藏的冰城记忆。</p></div><div class="ops-list"><button data-open="activityManage"><b>01</b><span>活动预约与名额管理<small>主题场次 · 会员优先</small></span><i>↗</i></button><button data-open="memberManage"><b>02</b><span>会员积分与私域触达<small>分层权益 · 节日礼遇</small></span><i>↗</i></button><button data-open="dashboard"><b>03</b><span>运营数据与风险看板<small>经营目标 · 服务保障</small></span><i>↗</i></button></div></section>
+  </main>
+
+  <footer><div class="brand"><span class="brand-mark">M</span><span>雪韵冰城<small>白银时代 · 俄侨记忆</small></span></div><p>中央大街的城市微度假 · 酒店即景区</p><button class="ai" id="aiBtn">✦ 问问米沙</button></footer>
+  <div class="modal" id="modal" aria-hidden="true"><div class="modal-box"><button class="close" aria-label="关闭">×</button><div id="modalContent"></div></div></div>
+  <div class="chat" id="chat"><div class="chat-head">✦ 米沙旅人助手 <button id="chatClose">×</button></div><div class="chat-log"><p>你好！我是米沙。请选择一个问题，我会立刻为你解答。</p></div><div class="quick"><button>今晚有什么活动？</button><button>活动怎么预约？</button><button>酒店在哪里？</button><button>怎么集章？</button><button>推荐哪条打卡路线？</button><button>屋顶几点开放？</button><button>会员有什么权益？</button><button>积分怎么获得？</button><button>下午茶怎么预订？</button><button>能带小朋友吗？</button><button>停车方便吗？</button><button>怎么联系人工客服？</button></div><form id="chatForm"><input placeholder="也可以输入关键词，例如：活动、路线、会员" /><button>发送</button></form></div>
+  <script src="script.js"></script>
+</body>
+</html>
